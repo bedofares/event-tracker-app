@@ -40,6 +40,7 @@ export function HomePage() {
           </p>
 
           <Button
+            size="small"
             label="Open Dashboard"
             icon="pi pi-arrow-right"
             onClick={(e) => {
