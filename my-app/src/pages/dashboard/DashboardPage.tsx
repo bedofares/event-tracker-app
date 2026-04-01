@@ -5,6 +5,7 @@ import { Toast } from "primereact/toast";
 
 import DataGrid from "../../components/incident-data-grid/DataGrid";
 import { IncidentForm } from "../../components/incident-form/IncidentForm";
+import { IncidentStatsBar } from "../../components/Incident-stats-bar/Incidentstatsbar";
 import { IncidentTimeline } from "../../components/incident-timeline/IncidentTimeline";
 import { mockData } from "../../data/incident";
 import type { Incident } from "../../types/types";
@@ -36,8 +37,10 @@ export function DashboardPage() {
   };
 
   return (
-    <div className="h-screen max-h-screen p-8 box-border flex flex-col gap-5 overflow-hidden">
+    <div className="h-screen max-h-screen p-16 pt-6 pb-0 box-border flex flex-col gap-5">
       <DashboardHeader onAddIncident={() => setShowDialog(true)} />
+
+      <IncidentStatsBar incidents={incidents} />
 
       <div className="card flex-1 min-h-0 p-4 flex flex-col overflow-hidden">
         <TabView

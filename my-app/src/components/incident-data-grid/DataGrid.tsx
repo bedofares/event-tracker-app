@@ -73,7 +73,6 @@ export default function DataGrid({ data, loading }: Readonly<DataGridProps>) {
           paginator
           rows={10}
           rowsPerPageOptions={[10, 25, 50]}
-          showGridlines
           removableSort
           scrollable
           scrollHeight="flex"
@@ -96,7 +95,7 @@ export default function DataGrid({ data, loading }: Readonly<DataGridProps>) {
           pt={{
             root: {
               className:
-                "border border-gray-200 rounded-xl overflow-hidden bg-white",
+                "border-y-0 border-l border-r border-gray-200 rounded-lg overflow-hidden",
             },
             header: {
               className: "bg-gray-50 p-3",
