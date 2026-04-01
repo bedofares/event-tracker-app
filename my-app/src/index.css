@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 body,
 html {
   width: 100%;
