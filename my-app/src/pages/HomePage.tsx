@@ -23,7 +23,7 @@ export function HomePage() {
           Welcome to the Incident Management Platform
         </h1>
 
-        <p className="max-w-[70%] text-gray-500 text-sm">
+        <p className="max-w-[70%] text-gray-500 text-lg!">
           Get a clear overview of building activity in one place. Track issues,
           analyze trends, and respond efficiently.
         </p>
@@ -32,7 +32,7 @@ export function HomePage() {
           title="Dashboard"
           subTitle="Overview & Insights"
           header={header}
-          className="w-[350px] max-w-full mt-4 text-left"
+          className="w-[450px] max-w-full mt-4 text-left"
         >
           <p className="text-lg text-gray-500 mb-4">
             Explore reported issues, monitor their status, and stay up to date
