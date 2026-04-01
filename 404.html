@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -6,9 +6,8 @@
       const base = "/incident-tracker-app";
       const path = window.location.pathname.replace(base, "");
 
-      // Only redirect if there's a real path, otherwise let index.html load
       if (path && path !== "/") {
-        window.location.replace(base + "/index.html#" + path);
+        window.location.replace(base + "/index.html?redirect=" + path);
       } else {
         window.location.replace(base + "/");
       }
