@@ -1,8 +1,12 @@
+export type IncidentStatus = "open" | "in_progress" | "resolved";
+
+export type IncidentSeverity = "low" | "medium" | "high";
+
 export type Incident = {
   id: number;
   name: string;
   description: string;
   date: Date;
-  status: "open" | "in_progress" | "resolved";
-  severity: "low" | "medium" | "high";
+  status: IncidentStatus;
+  severity: IncidentSeverity;
 };
