@@ -25,7 +25,7 @@ export function IncidentTimeline({ data }: IncidentTimelineProps) {
   }
 
   return (
-    <div role="feed" onKeyDown={handleKeyDown} className="flex flex-col">
+    <div role="feed" aria-label="Incident timeline grouped by day" onKeyDown={handleKeyDown} className="flex flex-col">
       {groups.map((group, groupIndex) => {
         const startIndex = groups
           .slice(0, groupIndex)
@@ -37,7 +37,9 @@ export function IncidentTimeline({ data }: IncidentTimelineProps) {
             group={group}
             startIndex={startIndex}
             focusedIndex={focusedIndex}
-            onFocusChange={setFocusedIndex}
+            onFocusChange={(index) => {
+              setFocusedIndex(index);
+            }}
             handleKeyDown={handleKeyDown}
             itemRefs={itemRefs}
           />

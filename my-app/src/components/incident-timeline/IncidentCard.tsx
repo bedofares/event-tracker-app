@@ -3,10 +3,10 @@ import { Card } from "primereact/card";
 import { forwardRef } from "react";
 import type { Incident } from "../../types/types";
 import {
-    capitalize,
-    formatDate,
-    getSeverityColor,
-    getStatusColor,
+  capitalize,
+  formatDate,
+  getSeverityColor,
+  getStatusColor,
 } from "../incident-data-grid/DataGrid.helpers";
 
 interface IncidentCardProps {
@@ -23,6 +23,8 @@ export const IncidentCard = forwardRef<HTMLDivElement, IncidentCardProps>(
         ref={ref}
         role="article"
         tabIndex={tabIndex}
+        aria-label={`incident-title-${incident.name}`}
+        aria-labelledby={`incident-title-${incident.name}`}
         onFocus={onFocus}
         onKeyDown={onKeyDown}
         className="rounded-(--border-radius) focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
