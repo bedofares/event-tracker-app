@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <script>
-      const path = window.location.pathname;
       const base = "/incident-tracker-app";
+      const path = window.location.pathname.replace(base, "");
 
-      window.location.replace(
-        base + "/index.html#" + path.replace(base, "")
-      );
+      // Only redirect if there's a real path, otherwise let index.html load
+      if (path && path !== "/") {
+        window.location.replace(base + "/index.html#" + path);
+      } else {
+        window.location.replace(base + "/");
+      }
     </script>
   </head>
   <body></body>
