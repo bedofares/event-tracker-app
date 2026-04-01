@@ -7,14 +7,14 @@ import {
   capitalize,
   getSeverityColor,
   getStatusColor,
-} from "./DataGrid.helpers";
+} from "./utils/dataGridHelpers";
 
 
 export const tagTemplate = (value: string, field: string) => {
   const severity =
     field === "status" ? getStatusColor(value) : getSeverityColor(value);
 
-  return <Tag value={capitalize(value)} severity={severity} />;
+  return <Tag className="text-sm!" value={capitalize(value)} severity={severity} />;
 };
 
 export const multiSelectFilterTemplate =

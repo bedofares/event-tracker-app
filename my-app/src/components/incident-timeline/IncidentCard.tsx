@@ -7,7 +7,7 @@ import {
   formatDate,
   getSeverityColor,
   getStatusColor,
-} from "../incident-data-grid/DataGrid.helpers";
+} from "../incident-data-grid/utils/dataGridHelpers";
 
 interface IncidentCardProps {
   incident: Incident;

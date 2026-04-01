@@ -1,11 +1,11 @@
 import { SEVERITIES, STATUSES } from "../../constants/incident.constants";
 import type { Incident } from "../../types/types";
-import { formatDate } from "./DataGrid.helpers";
+import { formatDate } from "./utils/dataGridHelpers";
 import {
   dateFilterTemplate,
   multiSelectFilterTemplate,
   tagTemplate,
-} from "./DataGrid.templates";
+} from "./DataGridTemplates";
 
 import type { ColumnProps } from "primereact/column";
 

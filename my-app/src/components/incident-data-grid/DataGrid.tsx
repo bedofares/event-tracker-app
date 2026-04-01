@@ -5,8 +5,8 @@ import { Column } from "primereact/column";
 import { DataTable, type DataTableFilterMeta } from "primereact/datatable";
 
 import type { Incident } from "../../types/types";
-import { COLUMN_DEFINITIONS } from "./DataGrid.constants";
-import { DataGridHeader } from "./DataGrid.header";
+import { DataGridHeader } from "./DataGridHeader";
+import { COLUMN_DEFINITIONS } from "./dataGridConfig";
 import { DataGridErrorState } from "./DataGridErrorState";
 
 interface DataGridProps {

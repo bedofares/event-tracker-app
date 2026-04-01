@@ -30,15 +30,15 @@ export function IncidentStatsBar({
     {
       label: "Open",
       count: openCount,
-      colorClass: "text-red-500",
-      bgClass: "bg-red-50",
+      colorClass: "text-cyan-500",
+      bgClass: "bg-cyan-50",
       icon: "pi pi-exclamation-circle",
     },
     {
       label: "In Progress",
       count: inProgressCount,
-      colorClass: "text-orange-400",
-      bgClass: "bg-orange-50",
+      colorClass: "text-blue-500",
+      bgClass: "bg-blue-50",
       icon: "pi pi-clock",
     },
     {
@@ -70,7 +70,7 @@ export function IncidentStatsBar({
           <div className="flex items-center justify-between">
             <div className="flex flex-col gap-1">
               <div
-                className={`p-2 w-fit rounded-xl ${stat.bgClass} ${stat.colorClass}`}
+                className={`p-2 w-fit rounded-xl bg-blue ${stat.bgClass} ${stat.colorClass}`}
               >
                 <i className={`${stat.icon} text-xl!`} />
               </div>
