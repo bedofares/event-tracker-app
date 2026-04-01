@@ -1,3 +1,4 @@
+import { SEVERITIES, STATUSES } from "../../constants/incident.constants";
 import type { Incident } from "../../types/types";
 import { formatDate } from "./DataGrid.helpers";
 import {
@@ -5,19 +6,14 @@ import {
   multiSelectFilterTemplate,
   tagTemplate,
 } from "./DataGrid.templates";
-import type { ColumnDefinition } from "./DataGridTypes";
 
-export const STATUSES = [
-  { label: "Open", value: "open" },
-  { label: "In Progress", value: "in_progress" },
-  { label: "Resolved", value: "resolved" },
-];
+import type { ColumnProps } from "primereact/column";
 
-export const SEVERITIES = [
-  { label: "Low", value: "low" },
-  { label: "Medium", value: "medium" },
-  { label: "High", value: "high" },
-];
+type ColumnDefinition = {
+  field: string;
+  header: string;
+  props?: Partial<ColumnProps>;
+};
 
 export const COLUMN_DEFINITIONS: ColumnDefinition[] = [
   {

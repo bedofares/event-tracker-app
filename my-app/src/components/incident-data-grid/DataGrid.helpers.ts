@@ -1,4 +1,10 @@
-import type { Severity } from "./DataGridTypes";
+type Severity =
+  | "success"
+  | "info"
+  | "warning"
+  | "danger"
+  | "secondary"
+  | "contrast";
 
 export const formatDate = (date: Date) => {
   return date.toLocaleDateString("en-GB");
