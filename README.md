@@ -1,5 +1,7 @@
 # Incident Tracker App
 
+**Live Demo:** https://bedofares.github.io/incident-tracker-app/
+
 React Developer Technical Task for Genetec
 
 ---
