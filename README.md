@@ -34,8 +34,6 @@ I chose **PrimeReact** because it provides rich, production-ready components suc
 * DataTable (with built-in filtering, sorting, and pagination)
 * Timeline component for visualizing incident history
 
-This helped speed up development while still allowing flexibility and customization.
-
 ---
 
 ## Data Handling
